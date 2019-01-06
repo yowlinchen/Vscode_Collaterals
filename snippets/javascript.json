@@ -1,0 +1,64 @@
+{
+	// Place your snippets for javascript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Console log": {
+		"prefix": "tlog",
+		"body": [
+			"console.log('TERRY MSG:'+$1);",
+		],
+		"description": "Terry JS Console log"
+	},
+	"For_Loop": {
+		"prefix": "tfor",
+		"body": [
+			"for (let n=$1; n<$2; n++) {",
+			"\t$3",
+			"}"
+		],
+		"description": "For Loop"
+	},
+	"Windo load": {
+		"prefix": "tload",
+		"body": [
+			"window.addEventListener('load', function () {",
+			"\t$1",
+			"});"
+		],
+		"description": "window load"
+	},
+	"Image": {
+		"prefix": "timg",
+		"body": [
+			"let ${1:img} = new Image();",
+			"${2:img}.src = $3;",
+			"${4:img}.onload = function () {",
+			"\t$5",
+			"};"
+		],
+		"description": "Image"
+	},
+	"http": {
+		"prefix": "thttp",
+		"body": [
+			"let ${1:req} = new XMLHttpRequest();",
+			"${2:req}.open('${3:get}',$4);",
+			"${5:req}.onload = function () {",
+			"\t$6;",
+			"};",
+			"${7:req}.send();"
+		],
+		"description": "http"
+	}
+
+}

@@ -1,0 +1,62 @@
+{
+    // From the "Front-End_Starter-Pack"
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showExpandedAbbreviation": "always",
+    "emmet.showAbbreviationSuggestions": true,
+    "css.validate": false,
+    // Disable linting 
+    "python.linting.enabled": false,
+    "python.linting.lintOnSave": false,
+    // Customize code runner
+    "code-runner.clearPreviousOutput": false,
+    "code-runner.runInTerminal": true,
+    "todohighlight.keywords": [
+        {
+            "text": "IMPORTANT:",
+            "color": "#fff",
+            "backgroundColor": "#FF3333"
+        },
+        {
+            "text": "SECTION",
+            "color": "black",
+            "backgroundColor": "yellow"
+        }
+    ],
+    // From Pyradize
+    "python.linting.pylintArgs": [
+        "--disable=W,C"
+    ],
+    "window.zoomLevel": 0,
+    "extensions.autoUpdate": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "bottom",
+    // Gitlens related
+    "gitlens.historyExplorer.enabled": true,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    // Sync setting related
+    "sync.gist": "cff4c687b6421057670c0342fc7dddb5",
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true,
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastUpload": "2018-05-13T06:52:46.897Z",
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    // No Delet Confirmation pop-up
+    "explorer.confirmDelete": false,
+    // Default the terminal to git bash (can do grep / git..etc)
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+    // Override the selected item colors to dark red
+    "workbench.colorCustomizations": {
+        //"editor.selectionBackground": "#880000"
+        "editor.selectionHighlightBackground": "#880000"
+    }
+}
