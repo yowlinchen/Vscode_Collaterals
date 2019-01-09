@@ -96,15 +96,49 @@
     // Alt+P to comapre previous revision instead ctrl + shift + g
     {
         "key": "alt+p",
+        "command": "-keybindings.editor.toggleSortByPrecedence",
+        "when": "inKeybindings"
+    },
+    {
+        "key": "alt+p",
         "command": "gitlens.diffWithPrevious",
-        "when": "editorTextFocus && !isInDiffEditor && gitlens:keymap == 'chorded' && gitlens:activeFileStatus =~ /tracked/"
+        "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'chorded' && gitlens:activeFileStatus =~ /tracked/"
     },
     {
         "key": "ctrl+shift+g ,",
         "command": "-gitlens.diffWithPrevious",
-        "when": "editorTextFocus && !isInDiffEditor && gitlens:keymap == 'chorded' && gitlens:activeFileStatus =~ /tracked/"
+        "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'chorded' && gitlens:activeFileStatus =~ /tracked/"
     },
-
+    {
+        "key": "alt+p",
+        "command": "gitlens.diffWithPrevious",
+        "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+    },
+    {
+        "key": "alt+,",
+        "command": "-gitlens.diffWithPrevious",
+        "when": "editorTextFocus && !isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+    },
+    {
+        "key": "alt+p",
+        "command": "gitlens.diffWithPreviousInDiff",
+        "when": "isInDiffEditor && config.gitlens.keymap == 'chorded' && gitlens:activeFileStatus =~ /tracked/"
+    },
+    {
+        "key": "ctrl+shift+g ,",
+        "command": "-gitlens.diffWithPreviousInDiff",
+        "when": "isInDiffEditor && config.gitlens.keymap == 'chorded' && gitlens:activeFileStatus =~ /tracked/"
+    },
+    {
+        "key": "alt+p",
+        "command": "gitlens.diffWithPreviousInDiff",
+        "when": "isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+    },
+    {
+        "key": "alt+,",
+        "command": "-gitlens.diffWithPreviousInDiff",
+        "when": "isInDiffEditor && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /tracked/"
+    },
     // change the "explorer" to alt + i 
     {
         "key": "alt+i",
